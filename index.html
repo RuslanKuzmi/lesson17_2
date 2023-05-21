@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lesson17</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+
+
+		<main class="main">
+			<div class="shipping-address">
+				<div class="shipping-address__container">
+
+					<!-- 1 часть -->
+
+					<h2 class="shipping-address__title title">Shipping Address</h2>
+					<form action="#" method="post" class="shipping-address__contant">
+						<div class="shipping-address__column">
+							<div class="shipping-address__email email-shipping-address ">
+								<label class="email-shipping-address__label" for="shipping-address-email">Email Address <span>*</span></label>
+								<input class="email-shipping-address__input" type="email" id="shipping-address-email" required autocomplete="off" name="email"	placeholder="roni_cost@example.com">
+							</div>
+							<div class="shipping-address__password password-shipping-address ">
+								<label class="password-shipping-address__label" for="shipping-address-password">Password </label>
+								<input class="password-shipping-address__input" type="password" id="shipping-address-password"  autocomplete="off" name="password" placeholder="******************">
+							</div>		
+							<div class="shipping-address__zip zip-shipping-address ">
+								<label class="zip-shipping-address__label" for="shipping-address-zip">Zip/Postal Code </label>
+								<input class="zip-shipping-address__input" type="text" id="shipping-address-zip" name="zip" autocomplete="off"> 
+							</div>
+						</div> <!-- shipping-address__column -->
+						<p class="shipping-address__text">You already have an account with us. Sign in or continue as guest.</p>
+						<div class="shipping-address__footer footer-shipping-address ">
+							<button type="submit" class="footer-shipping-address__button button">
+								login
+							</button>
+							<a class="footer-shipping-address__link" href="">Forgot Your Password?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+
+				<!-- 2 часть -->
+			<div class="second-form">
+						<div class="second-form__container">
+							<div class="second-form__contant">
+								<form class="second-form__form" enctype="multipart/form-data" action="#">
+									<div class="second-form__big-block">
+										<div class="second-form__raw ">
+											<label class="second-form__label" for="first-name">First Name <span>*</span></label>
+											<input class="second-form__input" type="text" id="first-name" required autocomplete="off" name="first-name" placeholder="">
+										</div>
+										<div class="second-form__raw ">
+											<label class="second-form__label" for="Last-Name">Last Name <span>*</span> </label>
+											<input class="second-form__input" type="text" id="Last-Name" required autocomplete="off" name="Last Name" placeholder="">
+										</div>
+										<div class="second-form__raw ">
+											<label class="second-form__label" for="Company">Company</label>
+											<input class="second-form__input" type="text" id="Company"  autocomplete="off" name="Company" placeholder="">
+										</div>
+										<div class="second-form__raw ">
+											<label class="second-form__label second-form__label_street" for="Street-Address1">Street Address <span>*</span></label>
+											<div class="second-form__block">
+												<input class="second-form__input" type="text" id="Street-Address1" required autocomplete="off" name="Street-Address1" placeholder="">
+												<input class="second-form__input" type="text" id="Street-Address" required autocomplete="off" name="Street-Address2" placeholder="">
+												<input class="second-form__input" type="text" id="Street-Address" required autocomplete="off" name="Street-Address3" placeholder="">
+											</div>									
+										</div>
+										<div class="second-form__raw ">
+											<label class="second-form__label" for="Country">Country <span>*</span></label>
+											<input class="second-form__input" type="text" id="Country" required autocomplete="off" name="Country" placeholder="">
+										</div>
+										<div class="second-form__raw ">
+											<label class="second-form__label" for="State/Province">State/Province  <span>*</span></label>
+											<input class="second-form__input" type="text" id="State/Province" required autocomplete="off" name="State/Province" placeholder="Please select a region, state or province">
+										</div>
+									</div>		<!--second-form__big-block	-->
+									<div class="second-form__methods methods">
+										<h3 class="methonds__title title title_magrin">Shipping Methods</h3>
+										<div class="methonds__items">
+											<div class="methonds__item item-methonds">
+												<input type="radio" id="5$" class="item-methonds__krug" value="5$" name="cost">
+												<label class="item-methonds__cheked1 " for="5$">Deleniti iste? Minima nobis porro nostrum, hic rerum non fuga iste, quos eos voluptates deserunt, sapiente impedit vero expedita. 5$</label>
+												<label class="item-methonds__cheked "for="5$">Fixed</label>
+												<label class="item-methonds__cheked "for="5$">Flat Rate</label>
+											</div>
+											<div class="methonds__item item-methonds">
+												<input type="radio" id="10$" class="item-methonds__krug" value="10$" name="cost">
+												<label class="item-methonds__cheked1 " for="10$">Animi voluptates neque in? Necessitatibus quasi perferendis, laborum fugiat fugit iste et quo velit enim voluptatibus error quod nulla mollitia dolorum. Perspiciatis. 10$</label>
+												<label class="item-methonds__cheked "for="10$">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet praesentium dicta assumenda libero sunt natus optio incidunt, quis consequatur eum? FixedF</label>
+												<label class="item-methonds__cheked "for="10$">Flat Rate</label>
+											</div>
+										</div> <!--methonds__items  -->
+										<div class="methonds__botom botom-methonds">
+											<button class="botom-methonds__button1 button" type="submit">
+												next
+											</button>
+											<button class="botom-methonds__button2" type="reset">
+												back
+											</button>
+										</div>
+									</div> <!--second-form__methods methods  -->
+								</form>
+							</div>  <!--second-form__contant-->
+						</div>	<!--second-form__container-->
+			</div>	<!--second-form-->
+			
+			<!-----------------------3 part----------------->
+			<form class="third" action="#" method="get" enctype="multipart/form-data">
+				<div class="third__container">
+					<h2 class="third__title">Billing Details</h2>
+					<div class="third__block block-third">
+						<div class="block-third__line ">
+							<input class="block-third__inp" type="text"  required autocomplete="" name="billing-first-name" placeholder="First name*">
+						</div>
+						<div class="block-third__line ">
+							<input class="block-third__inp" type="text" required autocomplete="" name="billing-last-name" placeholder="Last name*">
+						</div>
+						<div class="block-third__line ">
+							<input class="block-third__inp" type="text" required autocomplete="" name="billing-address" placeholder="Address*">
+						</div>
+						<div class="block-third__line ">
+							<input class="block-third__inp" type="text" autocomplete="" name="Address line 2" placeholder="Address line 2">
+						</div>
+						<div class="block-third__select select-block-third">	
+							<select required class="select-block-third__item" name="Country*" >
+							<option selected disabled value="">Country*</option>
+							<option value="1">USA</option>
+							<option  value="2">Ukraine</option>
+							<option value="3">Greate br</option>
+							<option value="4">Polish</option>
+						</select>
+						</div>
+						<div class="block-third__line ">
+							<input class="block-third__inp" type="text" autocomplete="" name="City/Town*" placeholder="City/Town*" required>
+						</div>
+						<div class="block-third__line ">
+							<input class="block-third__inp" type="text" autocomplete="" name="Postcode / ZIP*1" placeholder="Postcode / ZIP*" required>
+						</div>
+						<div class="block-third__line ">
+							<input class="block-third__inp" type="text" autocomplete="" name="Phone*1" placeholder="Phone*" required>
+						</div>
+						<div class="block-third__line ">
+							<input class="block-third__inp" type="text" autocomplete="" name="Postcode / ZIP*2" placeholder="Postcode / ZIP*" required>
+						</div>
+						<div class="block-third__line ">
+							<input class="block-third__inp" type="text" autocomplete="" name="Phone*2" placeholder="Phone*" required>
+						</div>
+					</div><!--block-third-->
+
+					<div class="third__account account-third">
+						<div class="account-third__line line-account">
+							<input id="create account" name="create account" class="line-account__inp" type="checkbox">
+							<label class="line-account__lab" for="create account">Create Account Create AccountCreate AccountCreate AccountCreate AccountCreate AccountCreate Account
+
+							</label>
+						</div>
+						<div class="account-third__line line-account">
+							<input id="Ship to a different address?" name="Ship to a different address?" class="line-account__inp" type="checkbox">
+							<label class="line-account__lab" for="Ship to a different address?">Ship to a different address?Ship to a different address?Ship to a different address?Ship to a different address?Ship to a different address?Ship to a different address?</label>
+						</div>
+					</div>
+
+					<h3 class="third__footer title">Apply Coupon to get discount!</h3>
+					<div class="third__coupon coupon-third">
+						<input placeholder="Coupon code" name="Coupon code" type="text" class="coupon-third__inp">
+						<button type="submit" class="coupon-third__button button button_boder">Apply Code</button>
+					</div>
+				</div><!--third__container-->
+			</form><!--third-->
+
+
+
+
+
+
+			<div class="first-part">
+				<div class="first-part__container">
+					<div class="first-part__header">
+						<h2 class="first-part__title">ACHIEVEMENT</h2>
+					</div>
+
+					<div class="first-part__block block-first">
+						<div class="block-first__items item-first-block">
+							<div class="item-first-block__picture">
+								<img src="img/first-part/01.jpg" alt="image">
+							</div>
+							<div class="item-first-block__descriptions descriptions ">
+								<div class="descriptions__title">Interior design</div>
+								<div class="descriptions__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</div>
+							</div>
+						</div> 
+						<div class="block-first__items item-first-block">
+							<div class="item-first-block__picture">
+								<img src="img/first-part/02.jpg" alt="image">
+							</div>
+							<div class="item-first-block__descriptions descriptions ">
+								<div class="descriptions__title">Consultant</div>
+								<div class="descriptions__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</div>
+							</div>
+						</div> 
+						<div class="block-first__items item-first-block">
+							<div class="item-first-block__picture">
+								<img src="img/first-part/03.jpg" alt="image">
+							</div>
+							<div class="item-first-block__descriptions descriptions ">
+								<div class="descriptions__title">construction consultant</div>
+								<div class="descriptions__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</div>
+							</div>
+						</div> 
+					</div>
+					
+				</div>
+			</div> <!-- first-part -->
+
+			<div class="second-part">
+				<div class="second-part__container">
+
+					<div class="second-part__header header-second-part">
+						<h2 class="header-second-part__title">Minimalist Room</h2>
+						<h3 class="header-second-part__subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+					</div> 
+					<div class="second-part__picture">
+						<img src="img/second-part/01.jpg" alt="sofa">
+					</div>
+
+					<div class="second-part__description description-second-part">
+						
+						<div class="description-second-part__block">
+							<h3 class="description-second-part__title">Project Overview</h3>
+							<div class="description-second-part__text">
+								<p>
+									Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+								</p>
+							</div>
+							<div class="description-second-part__items">
+								<div class="description-second-part__date">July 22 - 2022</div>
+								<div class="description-second-part__furniture">Interior Design - Furnitur</div>
+							</div>
+						</div>
+
+						<div class="description-second-part__block">
+							<h3 class="description-second-part__title">Design Process</h3>
+							<div class="description-second-part__text">
+								<p>
+									Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+								</p>
+								<p>
+									Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+								</p>
+							</div>
+						</div>
+
+					</div> <!-- second-part__description -->
+					
+					<div class="second-part__galery galery-second-part">
+						<div class="galery-second-part__items">
+
+							<div class="galery-second-part__item item-galery-second">
+								<div class="item-galery-second__image">
+									<img src="img/second-part/02.jpg" alt="furniture">
+								</div>
+								<div class="item-galery-second__image">
+									<img src="img/second-part/03.jpg" alt="furniture">
+								</div>
+							</div>
+
+							<div class="galery-second-part__item2">
+								<img src="img/second-part/04.jpg" alt="furniture">
+							</div>
+
+							<div class="galery-second-part__item item-galery-second">
+								<div class="item-galery-second__image">
+									<img src="img/second-part/05.jpg" alt="furniture">
+								</div>
+								<div class="item-galery-second__image">
+									<img src="img/second-part/06.jpg" alt="furniture">
+								</div>
+							</div>
+						</div>
+					</div> <!--second-part__galery -->
+				</div> <!-- second-part__container -->
+			</div> <!-- second-part -->
+			
+		</main>
+
+
+		<footer class="footer"></footer>
+	</div>
+</body>
+</html>
+
